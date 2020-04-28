@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="gen_configModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="cfg_campaign">
+          <Key>
+            <PropertyRef Name="dbid" />
+          </Key>
+          <Property Name="dbid" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="tenant_dbid" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="description" Type="varchar" MaxLength="255" />
+          <Property Name="script_dbid" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="state" Type="int" />
+          <Property Name="csid" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="tenant_csid" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="script_csid" Type="numeric" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="gen_configModelStoreContainer">
+          <EntitySet Name="cfg_campaign" EntityType="Self.cfg_campaign" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="gen_configModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cfg_campaign">
+          <Key>
+            <PropertyRef Name="dbid" />
+          </Key>
+          <Property Name="dbid" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="tenant_dbid" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="script_dbid" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="csid" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="tenant_csid" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="script_csid" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <EntityContainer Name="gen_configEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cfg_campaign" EntityType="Self.cfg_campaign" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="gen_configModelStoreContainer" CdmEntityContainer="gen_configEntities">
+          <EntitySetMapping Name="cfg_campaign">
+            <EntityTypeMapping TypeName="gen_configModel.cfg_campaign">
+              <MappingFragment StoreEntitySet="cfg_campaign">
+                <ScalarProperty Name="dbid" ColumnName="dbid" />
+                <ScalarProperty Name="tenant_dbid" ColumnName="tenant_dbid" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="script_dbid" ColumnName="script_dbid" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="csid" ColumnName="csid" />
+                <ScalarProperty Name="tenant_csid" ColumnName="tenant_csid" />
+                <ScalarProperty Name="script_csid" ColumnName="script_csid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

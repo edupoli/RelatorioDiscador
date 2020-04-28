@@ -10,141 +10,105 @@
 namespace RelatorioDiscador {
     
     
-    public partial class _Default {
+    public partial class addUser {
         
         /// <summary>
-        /// Controle Label1.
+        /// Controle txtuserid.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox txtuserid;
         
         /// <summary>
-        /// Controle TextInicial.
+        /// Controle txtNome.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextInicial;
+        protected global::System.Web.UI.WebControls.TextBox txtNome;
         
         /// <summary>
-        /// Controle Label2.
+        /// Controle txtLogin.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox txtLogin;
         
         /// <summary>
-        /// Controle TextFinal.
+        /// Controle txtSenha.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextFinal;
+        protected global::System.Web.UI.WebControls.TextBox txtSenha;
         
         /// <summary>
-        /// Controle lblCampanha.
+        /// Controle txtConfirmaSenha.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCampanha;
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmaSenha;
         
         /// <summary>
-        /// Controle cboxCampanha.
+        /// Controle btnSalvar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboxCampanha;
+        protected global::System.Web.UI.WebControls.Button btnSalvar;
         
         /// <summary>
-        /// Controle rbResultadoChama.
+        /// Controle btnVoltar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbResultadoChama;
+        protected global::System.Web.UI.WebControls.Button btnVoltar;
         
         /// <summary>
-        /// Controle cboxCallResult.
+        /// Controle painelErro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboxCallResult;
+        protected global::System.Web.UI.WebControls.Panel painelErro;
         
         /// <summary>
-        /// Controle rbNome.
+        /// Controle lblMensagemErro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbNome;
+        protected global::System.Web.UI.WebControls.Label lblMensagemErro;
         
         /// <summary>
-        /// Controle TextNome.
+        /// Controle painelOk.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextNome;
+        protected global::System.Web.UI.WebControls.Panel painelOk;
         
         /// <summary>
-        /// Controle rbCPF.
+        /// Controle lblMensagemOK.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbCPF;
-        
-        /// <summary>
-        /// Controle TextCpfCnpj.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextCpfCnpj;
-        
-        /// <summary>
-        /// Controle rbTelefone.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rbTelefone;
-        
-        /// <summary>
-        /// Controle TextTelefone.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextTelefone;
-        
-        /// <summary>
-        /// Controle btnGerarRelatorio.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGerarRelatorio;
+        protected global::System.Web.UI.WebControls.Label lblMensagemOK;
     }
 }

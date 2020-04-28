@@ -11,7 +11,25 @@ namespace RelatorioDiscador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string nome = (string)Session["login"];
+            if (nome != null)
+            {
+                Label1.Text = nome;
+            }
+            else
+            {
+                Response.Redirect("expirou.aspx");
+            }
+            string login = (string)Session["usuario"];
+            if (login == "admin")
+            {
 
+                usuario.Visible = true;
+            }
+            else
+            {
+                usuario.Visible = false;
+            }
         }
     }
 }
